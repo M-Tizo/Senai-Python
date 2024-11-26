@@ -1,4 +1,4 @@
-#Um programa que lê o vetor de 5 numeros inteiros e mostre-os
+"""#Um programa que lê o vetor de 5 numeros inteiros e mostre-os
 
 quantidade = 0
 num = []
@@ -48,4 +48,36 @@ for letra in list(palavra):
     if letra in vogais:
         print(f"A letra {letra} é uma vogal")
     else:
-        print(f"A letra {letra} é uma consoante")
+        print(f"A letra {letra} é uma consoante")"""
+"""
+#Programa que lÊ 20 numeros inteiros e armazena num vetor os numeros pares no vetor PAR e impares no vetor IMPAR imprimindo os 3 valores
+par = []
+impar = []
+num = []
+contador = 0
+
+while contador < 20:
+   
+    nume = int(input("Digite um numero: "))
+    num.append(nume)
+    for i in num:
+     if i % 2 == 0:
+      par.append(i)
+     else:
+        impar.append(i)
+    contador += 1
+print(par)
+print(impar)
+print(num)
+"""
+
+#Um programa que lê um vetor de 5 números inteiros, mostrando a soma, a multiplicação e os números
+num = []
+contador = 0
+multi = 1
+while contador < 5:
+  nume = int(input("Digite um número: "))
+  contador += 1
+  num.append(nume)
+
+print(f"Você digitou os numero {num} e a soma deles é {sum(num)}")

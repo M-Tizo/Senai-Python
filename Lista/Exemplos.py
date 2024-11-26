@@ -1,4 +1,4 @@
-#Criando uma lista
+"""#Criando uma lista
 bancos = ["Banco do Brasil", "Caixa", "Satander"]
 
 #Criando uma lista vazia
@@ -135,6 +135,30 @@ if item_removido in produtos:
 else:
     print(f"O produto {item_removido} não está na lista de produtos da apple ")
 for i in produtos:
-    print(i) or print(i, end = " - ")
+    print(i) or print(i, end = " - ")"""
 
+"""
+#Matriz
 
+matriz = [
+[1,2,3],
+[4,5,6],
+[7,8,9]
+]
+
+#matriz = [[1,2,3], [4,5,6], [7,8,9,]]
+
+print(len(matriz))
+print(matriz[0][1]) #elemento da primeira linha na segunda coluna: 2
+print(matriz[1][2])#Elemento da segunda linha na terceira coluna: 6
+"""
+
+#percorrendo uma matriz
+
+matriz = [[1,2,3],[4,5,6],[7,8,9]]
+
+print("Elementos da matriz:")
+print(f"Tamanho da minha matriz: {len(matriz)}")
+for i in range (len(matriz)): 
+    for j in range (len(matriz[i])):
+        print(j)
