@@ -83,13 +83,27 @@ print(f"Você digitou os numero {num} e a soma deles é {sum(num)}")
 """
 
 matriz = []
-
+media = []
+aprovado = []
+qtd = 0
+print("Bem-Vindo ao sistema de preenchimento de notas de alunos")
 for i in range (6):
     linha = []
+    media.append(linha)
     for j in range (4):
         nota = int(input(f"Digite a nota do aluno {1+i}: "))
         linha.append(nota)
-        matriz.append(linha)
-print("Notas: ")
+    matriz.append(linha)
+    print(linha)
+    media_p_al = sum(linha) / len(linha)
+    media.append(media_p_al)
+    print("Notas: ")
 for linha in matriz:
     print(linha)
+    print("A media dos alunos foram: ")
+    print(media)
+
+    if media_p_al >= 7:
+            aprovado.append(media_p_al)
+            qtd += 1
+print(f"Um total de {qtd} alunos foram aprovados")
