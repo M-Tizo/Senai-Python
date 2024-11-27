@@ -22,12 +22,16 @@ while minusculo == True:
     confirmação = (input("Confirme sua senha:"))
     minusculo = senha.islower()
 
-while confirmação == str and confirmação == int:
+
+while confirmação.isdigit() == True or confirmação.isalpha() == True:
     print("Precisa ter numeros e letras")
     senha = str(input("Digite sua senha: "))
     confirmação = input("Confirme sua senha: ")
 
-if maiusculo == False and minusculo == False and senha == confirmação:
+
+
+if maiusculo == False and minusculo == False and senha == confirmação and confirmação.isdigit() == False or confirmação.isalpha() == False:
     print("Senha valida")
 else:
     print("Senha invalida falta um numero!")
+

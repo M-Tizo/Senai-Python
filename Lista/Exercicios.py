@@ -69,7 +69,6 @@ while contador < 20:
 print(par)
 print(impar)
 print(num)
-"""
 
 #Um programa que lê um vetor de 5 números inteiros, mostrando a soma, a multiplicação e os números
 num = []
@@ -81,3 +80,16 @@ while contador < 5:
   num.append(nume)
 
 print(f"Você digitou os numero {num} e a soma deles é {sum(num)}")
+"""
+
+matriz = []
+
+for i in range (6):
+    linha = []
+    for j in range (4):
+        nota = int(input(f"Digite a nota do aluno {1+i}: "))
+        linha.append(nota)
+        matriz.append(linha)
+print("Notas: ")
+for linha in matriz:
+    print(linha)
